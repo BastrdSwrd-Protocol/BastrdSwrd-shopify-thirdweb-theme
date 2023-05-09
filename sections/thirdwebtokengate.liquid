@@ -1,0 +1,31 @@
+<div
+  class="thirdwebtokengate"
+  data-contract-address="{{ section.settings.contractAddress }}"
+  data-chain-name="{{ section.settings.chainName }}"
+></div>
+
+{% schema %}
+{
+  "name": "Token Gate",
+  "settings": [
+    {
+      "type": "text",
+      "id": "contractAddress",
+      "label": "Contract Address",
+      "default": "0x72B2D0c6Eab55028463037a5Bb22A58810105355"
+    },
+    {
+      "type": "text",
+      "id": "chainName",
+      "label": "Chain Name",
+      "default": "polygon"
+    }
+  ],
+  "presets": [
+    {
+      "category": "React Components",
+      "name": "Token Gate"
+    }
+  ]
+}
+{% endschema %}
